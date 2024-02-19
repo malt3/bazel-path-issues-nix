@@ -1,0 +1,5 @@
+load("//bazelrule:rule.bzl", "some_rule")
+
+some_rule(
+    name = "my_rule",
+)
