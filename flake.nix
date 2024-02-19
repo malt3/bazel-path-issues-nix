@@ -17,9 +17,7 @@
       {
         packages = rec {
           bazel_7 = pkgs.bazel_7;
-          bazel_with_action_path_patch = pkgs.callPackage ./packages/bazel_with_action_path_patch.nix {
-            inherit (pkgs) bazel_7; inherit nixpkgs;
-          };
+          bazel_with_action_path_patch = bazel_with_action_path_patch;
           default = bazel_7;
         };
 
